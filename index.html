@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Show More</title>
+        <link rel="stylesheet" href="src/styles.css">
+        <script src="src/index.js" charset="utf-8"></script>
+    </head>
+    <body>
+
+        <!-- utworzenie zasobnika przechowującego karty -->
+        <div class="cards-container">
+
+            <!-- utworzenie pierwszej karty -->
+            <div class="card">
+                <div class="placeholder-for-image"></div>                   <!-- część zawierająca zdjęcie -->
+                <div class="info"><h2>Przykładowy tytuł #1.</h2></div>      <!-- część zawierająca tytuł karty -->
+
+                <!-- część zawierająca opis karty -->
+                <div class="description">
+
+                    <!-- część z opisem karty, która będzie zwiększać się lub zmniejszać -->
+                    <div class="expandMoreContent" id="showMoreContent1">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime atque, nemo placeat quibusdam dignissimos
+                            consequuntur quisquam ea voluptate velit animi temporibus nostrum iure quam est ipsam? Omnis inventore corrupti deserunt!
+                        </p>
+                    </div>
+
+                    <!-- część z przyciskiem, który będzie zwiększać lub zmniejszać sekcję z tekstem -->
+                    <div class="expandMoreHolder">
+                        <span expand-more data-hidetext="Show Less ..." data-showtext="... Show More" data-target="showMoreContent1" 
+                              class="btn-expand-more">... Show More</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- utworzenie drugiej karty -->
+            <div class="card">
+                <div class="placeholder-for-image"></div>                   <!-- część zawierająca zdjęcie -->
+                <div class="info"><h2>Przykładowy tytuł #2.</h2></div>      <!-- część zawierająca tytuł karty -->
+
+                <!-- część zawierająca opis karty -->
+                <div class="description">
+
+                    <!-- część z opisem karty, która będzie zwiększać się lub zmniejszać -->
+                    <div class="expandMoreContent" id="showMoreContent2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime atque, nemo placeat quibusdam dignissimos
+                            consequuntur quisquam ea voluptate velit animi temporibus nostrum iure quam est ipsam? Omnis inventore corrupti deserunt!
+                        </p>
+                    </div>
+
+                    <!-- część z przyciskiem, który będzie zwiększać lub zmniejszać sekcję z tekstem -->
+                    <div class="expandMoreHolder">
+                        <span expand-more data-hidetext="Show Less ..." data-showtext="... Show More" data-target="showMoreContent2" 
+                              class="btn-expand-more">... Show More</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>

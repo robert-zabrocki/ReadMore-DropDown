@@ -1,0 +1,95 @@
+
+/**********************************************************************************************************************
+ * 
+ *      autor: Robert Zabrocki
+ *      data: grudzień 2021
+ * 
+ *      opis: modyfikacja stylu elementu <body>.
+ * 
+***********************************************************************************************************************/
+        body {
+            background-color: #b3b3b3;
+        }
+
+
+/**********************************************************************************************************************
+ * 
+ *      autor: Robert Zabrocki
+ *      data: grudzień 2021
+ * 
+ *      opis: modyfikacja elementów klasy 'cards-container'.
+ * 
+***********************************************************************************************************************/
+        .cards-container {
+            width: 100%;
+            background-color: transparent;
+            display: flex;
+        }
+
+
+/**********************************************************************************************************************
+ * 
+ *      autor: Robert Zabrocki
+ *      data: grudzień 2021
+ * 
+ *      opis: modyfikacja stylu elementów reprezentujących elementy klasy 'card' oraz pól tych elementów
+ *            zawierających zdjęcia.
+ * 
+***********************************************************************************************************************/
+        .card {
+            width: 400px;
+            margin: 10px;
+            background-color: whitesmoke;
+            border: solid 1px;
+            box-shadow: 0 2px 2px 0 rgba(0,0,0, 0.5);
+        }
+
+        .placeholder-for-image {
+            width: 400px;
+            height: 250px;
+            background-color: burlywood;
+        }
+
+
+/**********************************************************************************************************************
+ * 
+ *      autor: Robert Zabrocki
+ *      data: grudzień 2021
+ * 
+ *      opis: modyfikacja stylu elementów przechowujących tekst, który ma być rozszerzony/zmniejszony.
+ *            klasa: 'expandMoreContent' => pole jest zmniejszone
+ *            klasa: 'expandMoreContent.expand-active' => pole jest rozszerzone
+ * 
+***********************************************************************************************************************/
+        .expandMoreContent {
+            height: 35px;
+            overflow: hidden;
+            transition: height 0.5s ease-in-out;
+            position: relative;
+        }
+
+        .expandMoreContent.expand-active {
+            height: auto;
+            transition: height 0.5s ease-in-out;
+        }
+
+
+/**********************************************************************************************************************
+ * 
+ *      autor: Robert Zabrocki
+ *      data: grudzień 2021
+ * 
+ *      opis: modyfikacja stylu elementów przechowujących przyciski 'expandMoreHolder' oraz samych
+ *            przycisków 'btn-expand-more'.
+ * 
+***********************************************************************************************************************/        
+        .expandMoreHolder {
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .btn-expand-more {
+            cursor: pointer;
+            border: 1px solid rgba(0,0,0, 0.2);
+            display: inline-block;
+        }
